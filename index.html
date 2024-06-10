@@ -1,71 +1,85 @@
-<!-- <!DOCTYPE html>
-<html>
-    <head>
-        <title>Gradus converter</title>
-
-
-        <style>
-
-        </style>
-    </head>
-
-    <body>
-        <h1 
-        style="display: block;
-         color: red; 
-         background-color: blanchedalmond;
-         margin: 1em;
-         padding: 1em;
-         border-width: 0.5em;
-         border-style: ridge;
-         border-color: aqua;
-         border-radius: 1em;
-             ">
-                Welcome to the converter site
-        </h1>
-        <label for="degree input">input your number in Celsiums</label>
-        <input type="number" id="degree input"/>
-        <button id="done button">
-            Click me to converte
-        </button>
-        <div id="result div">
-            Result is 
-        </div>
-    </body>
-    <script>
-        const input = window.document.getElementById("degree input");
-        const button = window.document.getElementById("done button");
-        button.addEventListener("click", function(){
-            window.document.getElementById("result div").textContent = `Result is ${(input.value)*3/4 + 32}`;
-        })
-    </script>
-</html> -->
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ivan's website</title>
-        <style>
-            body {
-                padding: 0 200px;
-            }
-            a {
-                margin: 20px;
-            }
-        </style>
+        <title>XriXis.me</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="/images/betterIcon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <h1>Ivan Ivanovich Ivanov</h1>
             <nav>
-                <a href="/about.html">About Me</a>
-                <a href="/photos.html">Photos</a>
-                <a href="/portfolio.html">Portfolio</a>
-                <a href="/contact.html">Contact Me</a>
+                <ul>
+                    <li><button id="about_nav">About</button></li>
+                    <li><button id="projects_nav">Projects</button></li>
+                    <li><button id="contacts_nav">Contact</button></li>
+                </ul>
             </nav>
         </header>
+    
         <main>
-            <!-- Add some content here -->
+            <div id="about" class="section">
+                <div class="profile-container">
+                    <img src="images/myself.jpg" alt="Profile Photo" class="profile-photo">
+                    <h1>Ivan Lobazov</h1>
+                </div>
+                <p>
+                    Innopolis university student.<br/> 
+                    Developer on beginner step.
+                </p>
+                <ul class="data-list">
+                    <li>&#128205 Innopolis, Russia</li>
+                    <li>&#128337; GMT+3 </li>
+                </ul>
+            </div>
+
+            <div id="projects">
+                Here you can find what i did
+            </div>
+
+            <div id="contacts">
+                <h2>Me on...</h2>
+                <lu id="button_grid">
+                    <li>
+                        <a href="mailto:xzsaythjpf@gmail.com">
+                            <button id="mailRedirectButton" class="redirectButton">
+                                <img src="images/gmailLogo.png"style="width: 1em; height: 1em;">
+                                Mail
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/XriXis">
+                            <button id="gitRedirectButton" class="redirectButton">
+                                <img src="images/github-mark-white.png"style="width: .8em; height: .8em;">
+                                GitHub
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/users/764440019700023296">
+                            <button id="discordRedirectButton" class="redirectButton">
+                                <img src="images/discord-mark-white.png"style="width: .8em;">
+                                    Discord
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/xrixis">
+                            <button id="tgRedirectButton" class="redirectButton">
+                                <img src="images/tgLogo.png" style="width: .8em; height: .8em;">
+                                Telegram
+                            </button>
+                        </a>
+                    </li>
+                </lu>
+            </div>
         </main>
+    
+        <footer>
+            <p>&copy; 2024 XriXis's first steps</p>
+        </footer>
     </body>
+    <script src="index.js"></script>
 </html>
