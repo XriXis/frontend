@@ -140,6 +140,65 @@ footer {
     display: none;
 }
 
+#projects-loyaut{
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    gap: 1.5em;
+    grid-auto-rows: minmax(2rem, auto);
+    justify-content: center;
+}
+
 #projects{
     display: none;
+}
+
+.projects-item{
+    height: 1em;
+}
+
+.projects-item h3{
+    font-size: 1em;
+    text-align: left;
+    margin: 0 0;
+    padding:  0 0;
+}
+
+.projects-item h4{
+    font-size: .45em;
+    text-align: left;
+    margin: 0 0;
+    padding:  0 0;
+}
+
+.projects-item h6{
+    font-size: .1em;
+    margin: 0 0;
+    padding:  0 0;
+    text-align: right;
+    color: #4978ab;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.project-button{
+    height: 1.5em;
+    width: 10rem;
+    margin-top: 1em;
+    text-align: right;
+    display:flex;
+    border-style: none;
+    border-radius: .5em;
+    background-color: #2b456b;
+    color: rgb(197, 197, 197);
+}
+
+.project-button:hover{
+    background-color: #1e1252;
+}
+
+.project-icon{
+    width: .8em;
+    height: .8em;
+    padding-right: 0.3rem; 
+    padding-top: .1em;
 }
