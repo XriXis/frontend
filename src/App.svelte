@@ -13,10 +13,10 @@
     <Header/>
     <div id="content-wrap">
         <Router>
-            <Route path="/" component={About}/>
-            <Route path="/projects" component={Projects}/>
-            <Route path="/contacts" component={Contacts}/>
-            <Route path="/comic" component={Comic}/>
+            <Route path="/frontend/" component={About}/>
+            <Route path="/frontend/projects" component={Projects}/>
+            <Route path="/frontend/contacts" component={Contacts}/>
+            <Route path="/frontend/comic" component={Comic}/>
         </Router>
     </div>
     <Footer/>
