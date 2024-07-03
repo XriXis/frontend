@@ -1,26 +1,29 @@
-<script>
-    import {Router, Route} from 'svelte-routing';
+<script lang="ts">
+    import Router from 'svelte-spa-router';
     import Header from './Header.svelte';
     import About from './About.svelte';
     import Projects from './Projects.svelte';
     import Contacts from './Contacts.svelte';
-    import Footer from "./Footer.svelte";
-    import Comic from "./Comic.svelte";
-</script>
+    import Footer from './Footer.svelte';
+    import Comic from './Comic.svelte';
+    import type {ComponentType, } from "svelte";
 
+    const routes: { [key: string]: ComponentType } = {
+        '/': About,
+        '/projects': Projects,
+        '/contacts': Contacts,
+        '/comic': Comic
+    };
+</script>
 
 <div id="page-container">
     <Header/>
     <div id="content-wrap">
-        <Router>
-            <Route path="/frontend/" component={About}/>
-            <Route path="/frontend/projects" component={Projects}/>
-            <Route path="/frontend/contacts" component={Contacts}/>
-            <Route path="/frontend/comic" component={Comic}/>
-        </Router>
+        <Router {routes}/>
     </div>
     <Footer/>
 </div>
+
 <style>
     #page-container {
         position: relative;
@@ -34,5 +37,4 @@
         margin: 1rem 25%;
         justify-content: center;
     }
-
 </style>
