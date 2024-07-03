@@ -26,20 +26,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Prepare the project
-        run: |
-          cd ..
-          npm install
-          npm run build
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./dist
-          destination: ./_site
+      - name: Prepare the project
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
+        run: |
+          npm install
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
