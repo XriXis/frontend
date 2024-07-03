@@ -6,5 +6,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: "/front-end/",
+  base: "/frontend/",
 });
