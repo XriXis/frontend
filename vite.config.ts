@@ -5,6 +5,5 @@ export default defineConfig({
   plugins: [svelte()],
   build: {
     outDir: 'dist',
-  },
-  base: "/my-app/",
+  }
 });
