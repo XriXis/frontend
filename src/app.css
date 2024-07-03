@@ -1,0 +1,33 @@
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.875em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a3d0db;
+    transform: scale(2.5);
+    transform-origin: top left;
+    width: 40%;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 1em 2em;
+    position: relative;
+    min-height: 31.2vh;
+}
+
+main div{
+    text-align: center;
+}
+
