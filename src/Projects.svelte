@@ -8,26 +8,26 @@ Here you can find what i did
     <ProjectButton title="Comic viewer"
                    description="Frontend course homework"
                    date="July 2024"
-                   href="comic"
-                   src="frontend/images/betterIcon.ico">
+                   href="#/comic"
+                   src="images/betterIcon.ico">
     </ProjectButton>
     <ProjectButton title="BRLover"
                    description="Discord bot for dead game, asked by enthusiasts"
                    date="May 2022"
                    href="https://github.com/XriXis/BRLover_PythonDiscordBot"
-                   src="frontend/images/github-mark-white.png">
+                   src="images/github-mark-white.png">
     </ProjectButton>
     <ProjectButton title="This"
                    description="My portfolio, temporary showed here"
                    date="June 2024"
                    href="https://github.com/XriXis/frontend"
-                   src="frontend/images/github-mark-white.png">
+                   src="images/github-mark-white.png">
     </ProjectButton>
     <ProjectButton title="On the way"
                    description="Telegram web-app for finding companions in ride"
                    date="Aug 2024"
                    href="comic.html"
-                   src="frontend/images/gitlab-logo.png">
+                   src="images/gitlab-logo.png">
     </ProjectButton>
 
 </div>

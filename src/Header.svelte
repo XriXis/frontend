@@ -14,9 +14,6 @@
       <li>
         <NavigationButton label="Contacts" href="#/contacts" />
       </li>
-      <li>
-        <NavigationButton label="Comic" href="#/comic" />
-      </li>
     </ul>
   </nav>
 </header>
