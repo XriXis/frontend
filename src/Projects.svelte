@@ -1,10 +1,8 @@
 <script>
     import ProjectButton from "./lib/MyButton.svelte";
 </script>
-
-Here you can find what i did
-
-<div id="projects-loyaut">
+<h2>Here you can find what i did</h2>
+<div>
     <ProjectButton title="Comic viewer"
                    description="Frontend course homework"
                    date="July 2024"
@@ -31,8 +29,11 @@ Here you can find what i did
     </ProjectButton>
 
 </div>
-
 <style>
+    h2 {
+        text-align: center;
+    }
+
     div {
         display: grid;
         grid-template-columns: repeat(2, 0.2fr);
