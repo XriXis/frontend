@@ -28,6 +28,7 @@ jobs:
     steps:
       - name: Prepare the project
         run: |
+          cd ..
           npm install
           npm run build
       - name: Checkout
