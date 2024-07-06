@@ -6,7 +6,7 @@
   <nav>
     <ul>
       <li>
-        <NavigationButton label="About" href="/frontend/" />
+        <NavigationButton label="About" href="/frontend/about" />
       </li>
       <li>
         <NavigationButton label="Projects" href="/frontend/projects" />
