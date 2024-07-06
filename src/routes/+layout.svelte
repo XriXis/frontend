@@ -1,8 +1,12 @@
 <script>
     import Footer from "$lib/Footer.svelte";
     import Header from "$lib/Header.svelte";
+    import "../app.css";
+    import favicon from "../assets/images/favicon.png"
 </script>
-
+<svelte:head>
+    <link rel="icon" href={favicon} type="image/png" />
+</svelte:head>
 <div id="page-container">
     <Header/>
     <div id="content-wrap">

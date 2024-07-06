@@ -1,5 +1,9 @@
 <script>
     import MyButton from "$lib/MyButton.svelte";
+    import EmailLogo from "../../assets/images/gmailLogo.png";
+    import TgLogo from "../../assets/images/tgLogo.png";
+    import GitLogo from "../../assets/images/github-mark-white.png";
+    import DiscordLogo from "../../assets/images/discord-mark-white.png";
 </script>
 <svelte:head>
     <title>Contact me</title>
@@ -7,19 +11,19 @@
 <h2>Me on...</h2>
 <div>
     <MyButton href="mailto:xzsaythjpf@gmail.com"
-              src="src/assets/images/gmailLogo.png"
+              src={EmailLogo}
               title="Mail">
     </MyButton>
     <MyButton href="https://github.com/XriXis"
-              src="src/assets/images/github-mark-white.png"
+              src={GitLogo}
               title=GitHub>
     </MyButton>
     <MyButton href="https://discord.com/users/336106963568033793"
-              src="src/assets/images/discord-mark-white.png"
+              src={DiscordLogo}
               title=Discord>
     </MyButton>
     <MyButton href="https://t.me/xrixis"
-              src="src/assets/images/tgLogo.png"
+              src={TgLogo}
               title=Telegram>
     </MyButton>
 </div>

@@ -1,11 +1,12 @@
 <script>
+    import myself from "../assets/images/myself.jpg";
 </script>
 <svelte:head>
     <title>About</title>
 </svelte:head>
 <div id="about" class="section">
     <div class="profile-container">
-        <img src="../assets/images/myself.jpg" alt="Profile Photo" class="myself"/>
+        <img src={myself} alt="Me" class="myself"/>
         <h1>Ivan Lobazov</h1>
     </div>
     <p>Innopolis university student.<br/>Developer on beginner step.</p>
