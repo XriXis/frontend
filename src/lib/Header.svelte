@@ -6,13 +6,13 @@
   <nav>
     <ul>
       <li>
-        <NavigationButton label="About" href="/" />
+        <NavigationButton label="About" href="/frontend/" />
       </li>
       <li>
-        <NavigationButton label="Projects" href="/projects" />
+        <NavigationButton label="Projects" href="/frontend/projects" />
       </li>
       <li>
-        <NavigationButton label="Contacts" href="/contacts" />
+        <NavigationButton label="Contacts" href="/frontend/contacts" />
       </li>
     </ul>
   </nav>
