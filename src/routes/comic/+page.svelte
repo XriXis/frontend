@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import moment from "moment";
-    import type {Comic} from "./lib/ComicType";
+    import type {Comic} from "$lib/ComicType";
 
     let comic: Comic | null = null;
     let publishedDate: string = "";
@@ -23,7 +23,9 @@
         fetchComic();
     });
 </script>
-
+<svelte:head>
+    <title>Comic fetcher</title>
+</svelte:head>
 <div id="container">
     {#if comic}
         <div id="comic">

@@ -1,18 +1,18 @@
 <script>
-  import NavigationButton from './lib/NavigationButton.svelte';
+  import NavigationButton from './NavigationButton.svelte';
 </script>
 
 <header>
   <nav>
     <ul>
       <li>
-        <NavigationButton label="About" href="#/" />
+        <NavigationButton label="About" href="/" />
       </li>
       <li>
-        <NavigationButton label="Projects" href="#/projects" />
+        <NavigationButton label="Projects" href="/projects" />
       </li>
       <li>
-        <NavigationButton label="Contacts" href="#/contacts" />
+        <NavigationButton label="Contacts" href="/contacts" />
       </li>
     </ul>
   </nav>

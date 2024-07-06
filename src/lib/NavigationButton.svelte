@@ -1,10 +1,18 @@
 <script lang="ts">
+    import {onMount} from "svelte";
+
     export let href: string;
     export let label: string;
 
-    let currentUrl = new URL(window.location.href);
-    let refUrl = new URL(href, window.location.origin);
-    let btnClr = currentUrl.pathname === refUrl.pathname ? "#4978ab" : "#2f5d88";
+    let currentUrl: URL;
+    let refUrl: URL;
+    let btnClr: string;
+
+    onMount(() => {
+        currentUrl = new URL(window.location.href);
+        refUrl = new URL(href, window.location.origin);
+        btnClr = currentUrl.pathname === refUrl.pathname ? '#4978ab' : '#2f5d91';
+    });
 </script>
 
 <button on:click={() => { window.location.href = href; }} style="background-color: {btnClr};">{label}</button>

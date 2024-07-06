@@ -9,7 +9,7 @@
 
 <div>
     <button on:click={()=>{window.open(href)}}>
-        <img src={src} alt="logo">
+        <img src={src} alt="logo" class="press-kit-icon"/>
         {title}
     </button>
     {#if date}
@@ -66,7 +66,7 @@
         background-color: #1e1252;
     }
 
-    img {
+    .press-kit-icon {
         width: .8em;
         height: .8em;
         padding-left: .3em;

@@ -1,10 +1,11 @@
 <script>
-    import myself from '/images/myself.jpg'
 </script>
-
+<svelte:head>
+    <title>About</title>
+</svelte:head>
 <div id="about" class="section">
     <div class="profile-container">
-        <img src={myself} alt="Profile Photo">
+        <img src="../assets/images/myself.jpg" alt="Profile Photo" class="myself"/>
         <h1>Ivan Lobazov</h1>
     </div>
     <p>Innopolis university student.<br/>Developer on beginner step.</p>
@@ -25,7 +26,7 @@
         gap: 1em;
     }
 
-    img {
+    .myself {
         width: 5em;
         height: 5em;
         border-radius: 50%;

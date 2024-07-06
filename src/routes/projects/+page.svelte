@@ -1,31 +1,34 @@
 <script>
-    import ProjectButton from "./lib/MyButton.svelte";
+    import ProjectButton from "$lib/MyButton.svelte";
 </script>
 <h2>Here you can find what i did</h2>
+<svelte:head>
+    <title>Projects</title>
+</svelte:head>
 <div>
     <ProjectButton title="Comic viewer"
                    description="Frontend course homework"
                    date="July 2024"
-                   href="#/comic"
-                   src="images/betterIcon.ico">
+                   href="/comic"
+                   src="src/assets/images/favicon.ico">
     </ProjectButton>
     <ProjectButton title="BRLover"
                    description="Discord bot for dead game, asked by enthusiasts"
                    date="May 2022"
                    href="https://github.com/XriXis/BRLover_PythonDiscordBot"
-                   src="images/github-mark-white.png">
+                   src="src/assets/images/github-mark-white.png">
     </ProjectButton>
     <ProjectButton title="This"
                    description="My portfolio, temporary showed here"
                    date="June 2024"
                    href="https://github.com/XriXis/frontend"
-                   src="images/github-mark-white.png">
+                   src="src/assets/images/github-mark-white.png">
     </ProjectButton>
     <ProjectButton title="On the way"
                    description="Telegram web-app for finding companions in ride"
                    date="Aug 2024"
                    href="comic.html"
-                   src="images/gitlab-logo.png">
+                   src="src/assets/images/gitlab-logo.png">
     </ProjectButton>
 
 </div>

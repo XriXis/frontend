@@ -1,13 +1,10 @@
-import { defineConfig } from 'vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
-import sveltePreprocess from 'svelte-preprocess';
+import {defineConfig} from 'vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
+import {sveltekit} from '@sveltejs/kit/vite';
 
 export default defineConfig({
-  plugins: [svelte({
-      preprocess: sveltePreprocess(),
-    })],
-  build: {
-    outDir: 'dist',
-  },
-  base: "/frontend/",
+    plugins: [enhancedImages(),sveltekit(),],
+    build: {
+        outDir: 'dist',
+    }
 });
