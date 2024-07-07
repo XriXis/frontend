@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:svelte/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "svelte"
+  ],
+  "overrides": [
+    {
+      "files": ["*.svelte"],
+      "processor": "svelte/svelte"
+    }
+  ]
+}

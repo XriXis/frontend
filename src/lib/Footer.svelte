@@ -1,9 +1,8 @@
 <footer>
-    <p>&copy; 2024 XriXis's first steps</p>
+    <p>&copy; 2024 XriXis' first steps</p>
 </footer>
 
 <style>
-
     footer {
         position: absolute;
         height: 2.5rem;

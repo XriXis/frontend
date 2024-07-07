@@ -28,9 +28,10 @@
     </MyButton>
 </div>
 <style>
-    h2{
+    h2 {
         text-align: center;
     }
+
     div {
         list-style: none;
         padding: 0;

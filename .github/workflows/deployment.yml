@@ -26,6 +26,11 @@ jobs:
         run: |
           npm install
           npm run build
+#      Linting became impossible. I've tried several configurations (4)
+#      but recognition of svelte code was improper in each
+#      - name: Linting
+#        run:
+#          npm run lint
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:

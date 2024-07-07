@@ -1,5 +1,5 @@
 <script>
-    import MySelf from "../assets/images/myself.png";
+    import MySelf from "../assets/images/myself.jpg";
 </script>
 <svelte:head>
     <title>About</title>

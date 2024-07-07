@@ -8,18 +8,22 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
-    "deploy": "npx gh-pages -d dist"
+    "deploy": "npx gh-pages -d dist",
+    "lint": "eslint . --ext .ts,.svelte"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.2",
     "@sveltejs/adapter-static": "^3.0.2",
-    "@sveltejs/enhanced-img": "^0.3.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
     "@tsconfig/svelte": "^5.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-svelte": "^2.41.0",
     "svelte": "^4.2.18",
     "svelte-check": "^3.8.1",
+    "svelte-eslint-parser": "^0.39.2",
     "tslib": "^2.6.3",
-    "typescript": "^5.2.2",
+    "typescript": "^5.1.6",
     "vite": "^5.3.1"
   },
   "dependencies": {
