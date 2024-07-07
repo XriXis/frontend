@@ -7,16 +7,17 @@ const base = dev ? '' : '/frontend';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    paths: {
+      base,
+    },
   },
   preprocess: vitePreprocess(),
   vitePlugin: {
     // This enables compile-time warnings to be
     // visible in the learn.svelte.dev editor
   },
-  paths: {
-    base,
-  },
+
 };
 
 export default config;
