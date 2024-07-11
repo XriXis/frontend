@@ -7,12 +7,13 @@
 <h2>Here you can find what i did</h2>
 <svelte:head>
     <title>Projects</title>
+    <meta name="description" content="Tab with links on my projects" />
 </svelte:head>
 <div>
     <ProjectButton title="Comic viewer"
                    description="Frontend course homework"
                    date="July 2024"
-                   href="/comic"
+                   href="comic"
                    src={favicon}>
     </ProjectButton>
     <ProjectButton title="BRLover"

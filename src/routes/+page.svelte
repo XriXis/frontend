@@ -3,6 +3,7 @@
 </script>
 <svelte:head>
     <title>About</title>
+    <meta name="description" content="Key information about me" />
 </svelte:head>
 <div id="about" class="section">
     <div class="profile-container">

@@ -6,6 +6,7 @@
 </script>
 <svelte:head>
     <link rel="icon" href={favicon} type="image/png" />
+    <meta name="author" content="XriXis">
 </svelte:head>
 <div id="page-container">
     <Header/>

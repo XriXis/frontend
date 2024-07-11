@@ -1,30 +1,15 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    import moment from "moment";
-    import type {Comic} from "$lib/ComicType";
+    import type { Comic } from '$lib/ComicType';
 
-    let comic: Comic | null = null;
-    let publishedDate: string = "";
+    export let data: { comic: Comic, publishedDate: string };
 
-    async function fetchComic() {
-        const email: URLSearchParams = new URLSearchParams();
-        email.append('email', 'i.lobazov@innopolis.university');
-        const response: Response = await fetch('https://fwd.innopolis.university/api/hw2?' + email);
-        const id: URLSearchParams = new URLSearchParams;
-        id.append('id', await response.json());
-        const comicResponse: Response = await fetch('https://fwd.innopolis.university/api/comic?' + id);
-        comic = await comicResponse.json() as Comic;
-
-        const date: Date = new Date(parseInt(comic.year), parseInt(comic.month) - 1, parseInt(comic.day));
-        publishedDate = moment(date).fromNow();
-    }
-
-    onMount(() => {
-        fetchComic();
-    });
+    const comic = data.comic;
+    const publishedDate = data.publishedDate;
 </script>
 <svelte:head>
     <title>Comic fetcher</title>
+    <meta name="description"
+          content="Homework on 2nd week of front-end course" />
 </svelte:head>
 <div id="container">
     {#if comic}
@@ -65,7 +50,6 @@
     img {
         width: 100%;
         height: auto;
-
         margin-top: .75rem;
     }
 

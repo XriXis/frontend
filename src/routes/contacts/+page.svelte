@@ -7,6 +7,8 @@
 </script>
 <svelte:head>
     <title>Contact me</title>
+    <meta name="description"
+          content="Tab with links on my contacts. Not all, but essential social networks where I registered" />
 </svelte:head>
 <h2>Me on...</h2>
 <div>
