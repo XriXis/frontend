@@ -24,12 +24,6 @@ jobs:
         run: |
           npm run lint
           npm run format
-      - name: Prepare the project
-        env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
-        run: |
-          npm install
-          npm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
